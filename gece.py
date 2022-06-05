@@ -45,7 +45,7 @@ async def start(event):
                        Button.url('🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉', f'https://t.me/{USERNAME}?startgroup=a')],
                       [Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}'),
                        Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar")],
-                      [Button.url('🇹🇷  𝖮𝗐𝗇𝖾𝗋  ', f'https://github.com/MehmetAtes21/Tagger')]
+                      [Button.url('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻 ', f'https://github.com/MehmetAtes21/Tagger')]
                     ),
                     link_preview=False)
 
@@ -63,7 +63,7 @@ async def handler(event):
                        Button.url('🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉', f'https://t.me/{USERNAME}?startgroup=a')],
                       [Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}'),
                        Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar")],
-                      [Button.url('🇹🇷  𝖮𝗐𝗇𝖾𝗋  ', f'https://github.com/MehmetAtes21/Tagger')]
+                      [Button.url('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', f'https://github.com/MehmetAtes21/Tagger')]
                     ),
                     link_preview=False)
 
