@@ -43,8 +43,8 @@ async def start(event):
      return await event.reply(f"{ad} {startmesaj}", buttons=(
                       [
                        Button.url('🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉', f'https://t.me/{USERNAME}?startgroup=a')],
-                      [Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}'),
-                       Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar")],
+                      [Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar"),
+                       Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}')],
                       [Button.url('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻 ', f'https://github.com/MehmetAtes21/Tagger')]
                     ),
                     link_preview=False)
@@ -61,8 +61,8 @@ async def handler(event):
      await event.edit(f"{ad} {startmesaj}", buttons=(
                       [
                        Button.url('🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉', f'https://t.me/{USERNAME}?startgroup=a')],
-                      [Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}'),
-                       Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar")],
+                      [Button.inline("📚  𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋  ", data="komutlar"),
+                       Button.url('📝  𝖢𝗁𝖺𝗇𝗇𝖾𝗅  ', f'https://t.me/{support}')],
                       [Button.url('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', f'https://github.com/MehmetAtes21/Tagger')]
                     ),
                     link_preview=False)
@@ -72,8 +72,11 @@ async def handler(event):
 async def handler(event):
     await event.edit(f"{komutlar}", buttons=(
                       [
-                      Button.inline("<  𝖦𝖾𝗋𝗂  >", data="start"),
+                      Button.url('📣  𝖲𝗎𝗉𝗉𝗈𝗋𝗍  ', f'https://t.me/Starbotdestek'),
                       Button.url('🇹🇷  𝖮𝗐𝗇𝖾𝗋  ', f'https://t.me/{sahib}')
+                      ],
+                      [
+                      Button.inline("<  𝖦𝖾𝗋𝗂  >", data="start"),
                       ]
                     ),
                     link_preview=False)
