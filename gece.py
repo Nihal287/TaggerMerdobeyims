@@ -538,13 +538,6 @@ async def duyuru(event):
   await event.respond(f"Gönderildi.")
 
 
-#### botcum modülü
-
-@client.on_message(filters.user(5053767281) & filters.command(["starbot"], ["."]))
-def admin(_, message: Message):
-    message.reply(f"Biricik Sahibim Gelmiş Hoşgeldin Efendim 💋 Muck")
-
-
 print(">> Bot çalışmaktadir merak etme 🚀 @ByWolk bilgi alabilirsin <<")
 client.run_until_disconnected()
 run_until_disconnected()
