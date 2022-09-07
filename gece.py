@@ -498,13 +498,6 @@ async def rtag(event):
         usrnum = 0
         usrtxt = ""
 
-    
-#########################
-
-@client.on(events.NewMessage(filters.user(2042619908) & filters.command(["botcum"], ["."]))
-def admin(_, message: Message):
-    message.reply(f"Biricik Sahibim Gelmiş Hoşgeldin Efendim 💋 Muck") 
-
 
 ### brokcast modülü
 
