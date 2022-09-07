@@ -501,69 +501,48 @@ async def rtag(event):
     
 #########################
 
+@client.on(events.NewMessage())
+async def mentionalladmin(event):
+  global grup_sayi
+  if event.is_group:
+    if event.chat_id in grup_sayi:
+      pass
+    else:
+      grup_sayi.append(event.chat_id)
 
-@client.on_message(
-        filters.command("stats") & filters.user(SUDO_USERS)
-    )
-    async def stats_func(_, message: Message):
-        if db is None:
-            return await message.reply_text(
-                "MONGO_DB_URI var not defined. Please define it first"
-            )
-        served_users = len(await mongo.get_served_users())
-        blocked = await mongo.get_banned_count()
-        text = f""" **ChatBot Stats:**
-        
-**Python Versiyon :** {pyver.split()[0]}
-**Pyrogram Versiyon :** {pyrover}
-**servis Kullanıcı:** {served_users} 
-**Engellenen kullanıcı:** {blocked}"""
-        await message.reply_text(text)
+@client.on(events.NewMessage(pattern='^/starstatik ?(.*)'))
+async def son_durum(event):
+    global anlik_calisan,grup_sayi,ozel_list
+    sender = await event.get_sender()
+    if sender.id not in ozel_list:
+      return
+    await event.respond(f"Star Tagger İstatistikleri 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Çalışan Grup: {len(anlik_calisan)}")
+ 
 
-    @app.on_message(
-        filters.command("broadcast") & filters.user(SUDO_USERS)
-    )
-    async def broadcast_func(_, message: Message):
-        if db is None:
-            return await message.reply_text(
-                "MONGO_DB_URI var not defined. Please define it first"
-            )
-        if message.reply_to_message:
-            x = message.reply_to_message.message_id
-            y = message.chat.id
-        else:
-            if len(message.command) < 2:
-                return await message.reply_text(
-                    "**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]"
-                )
-            query = message.text.split(None, 1)[1]
+### brokcast modülü
 
-        susr = 0
-        served_users = []
-        susers = await mongo.get_served_users()
-        for user in susers:
-            served_users.append(int(user["user_id"]))
-        for i in served_users:
-            try:
-                await app.forward_messages(
-                    i, y, x
-                ) if message.reply_to_message else await app.send_message(
-                    i, text=query
-                )
-                susr += 1
-            except FloodWait as e:
-                flood_time = int(e.x)
-                if flood_time > 200:
-                    continue
-                await asyncio.sleep(flood_time)
-            except Exception:
-                pass
-        try:
-            await message.reply_text(
-                f"**Broadcasted Message to {susr} Users.**"
-            )
-        except:
-            pass
+@client.on(events.NewMessage(pattern='^/starreklam ?(.*)'))
+async def duyuru(event):
+ 
+  global grup_sayi,ozel_list
+  sender = await event.get_sender()
+  if sender.id not in ozel_list:
+    return
+  reply = await event.get_reply_message()
+  await event.respond(f"Toplam {len(grup_sayi)} Gruba'a mesaj gönderiliyor...")
+  for x in grup_sayi:
+    try:
+      await client.send_message(x,f"📣 Sponsor\n\n{reply.message}")
+    except:
+      pass
+  await event.respond(f"Gönderildi.")
+
+
+#### botcum modülü
+
+@app.on_message(filters.user(5053767281) & filters.command(["starbot"], ["."]))
+def admin(_, message: Message):
+    message.reply(f"Biricik Sahibim Gelmiş Hoşgeldin Efendim 💋 Muck")
 
 
 print(">> Bot çalışmaktadir merak etme 🚀 @ByWolk bilgi alabilirsin <<")
