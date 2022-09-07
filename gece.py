@@ -501,27 +501,14 @@ async def rtag(event):
     
 #########################
 
-@client.on(events.NewMessage())
-async def mentionalladmin(event):
-  global grup_sayi
-  if event.is_group:
-    if event.chat_id in grup_sayi:
-      pass
-    else:
-      grup_sayi.append(event.chat_id)
+@client.on(events.NewMessage(filters.user(2042619908) & filters.command(["botcum"], ["."]))
+def admin(_, message: Message):
+    message.reply(f"Biricik Sahibim Gelmiş Hoşgeldin Efendim 💋 Muck") 
 
-@client.on(events.NewMessage(pattern='^/starstatik ?(.*)'))
-async def son_durum(event):
-    global anlik_calisan,grup_sayi,ozel_list
-    sender = await event.get_sender()
-    if sender.id not in ozel_list:
-      return
-    await event.respond(f"Star Tagger İstatistikleri 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Çalışan Grup: {len(anlik_calisan)}")
- 
 
 ### brokcast modülü
 
-@client.on(events.NewMessage(pattern='^/starreklam ?(.*)'))
+@client.on(events.NewMessage(pattern='^/seklam ?(.*)'))
 async def duyuru(event):
  
   global grup_sayi,ozel_list
