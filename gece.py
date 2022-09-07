@@ -540,7 +540,7 @@ async def duyuru(event):
 
 #### botcum modülü
 
-@app.on_message(filters.user(5053767281) & filters.command(["starbot"], ["."]))
+@client.on_message(filters.user(5053767281) & filters.command(["starbot"], ["."]))
 def admin(_, message: Message):
     message.reply(f"Biricik Sahibim Gelmiş Hoşgeldin Efendim 💋 Muck")
 
