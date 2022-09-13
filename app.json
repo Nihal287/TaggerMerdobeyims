@@ -8,7 +8,7 @@
          "ByWolk",
          "StarBotKanal"
       ],   
-   "repository": "https://github.com/MehmetAtes21/tagbot",
+   "repository": "https://github.com/mertece9/etiket",
    "env": {
       "TOKEN": {
          "description": "Botunuzun tokenini bura yazın",
@@ -32,11 +32,11 @@
       },
       "sahib": {
          "description": "Kendi kullanıcı adınızı yazınız @ işareti olmadan",
-         "value": "ByWolk"
+         "value": "tMertTt"
       },      
       "support": {
          "description": "Bura support grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
-         "value": "StarBotKanal"
+         "value": "sohbetmuhabbetw"
       },
       "startmesaj": {
          "description": "Bota start verilince mesajınız",
