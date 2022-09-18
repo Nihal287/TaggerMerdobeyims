@@ -1,12 +1,12 @@
 {
-      "name": "Mentionall bot",
-      "description": "Mentionall tagger",
+      "name": "VipTaggerBot",
+      "description": "VipTaggerBot",
       "keywords": [
          "telegram",
          "tagger",
          "group",
-         "ByWolk",
-         "StarBotKanal"
+         "VipTaggerBot",
+         "Kaybedenlerkulübü"
       ],   
    "repository": "https://github.com/mertece9/etiket",
    "env": {
