@@ -106,7 +106,7 @@ async def mentionall(event):
     return await event.respond("• 𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗆 𝗂𝖼𝗂𝗇 𝖻𝗂𝗋 𝗌𝖾𝖻𝖾𝗉 𝗒𝖺𝗓𝗂𝗇 ! ")
     
   if mode == "text_on_cmd":
-    await client.send_message(event.chat_id, "✅ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝗅𝖺𝖽𝗂 . . .",
+    await client.send_message(event.chat_id, "✅ @merdoobeyims üye etiketleme işlemini başlattı . . .",
                     buttons=(
                       [
                       Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
