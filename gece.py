@@ -120,7 +120,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) , "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . .",
+        await event.respond("⛔ merdo üye işlemini durdurdu . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -179,7 +179,7 @@ async def mentionalladmin(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖠𝖽𝗆𝗂𝗇 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . .",
+        await event.respond("⛔ 𝖠𝖽𝗆𝗂𝗇 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋du . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -238,7 +238,7 @@ async def tektag(event):
       usrnum += 1
       usrtxt += f"• [{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . .",
+        await event.respond("⛔ Merdoobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋du . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -312,7 +312,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) , "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . .",
+        await event.respond("⛔ Merdoobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋du . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -378,7 +378,8 @@ soz = (
 'ɪɴsᴀɴ sᴇᴠɪʟᴍᴇᴋᴛᴇɴ ᴄᴏᴋ ᴀɴʟᴀsɪʟᴍᴀʏɪ ɪsᴛɪʏᴏʀᴅᴜ ʙᴇʟᴋɪ ᴅᴇ', 
 'ᴇᴋᴍᴇᴋ ᴘᴀʜᴀʟɪ , ᴇᴍᴇᴋ ᴜᴄᴜᴢᴅᴜʀ', 
 'sᴀᴠᴀsᴍᴀʏɪ ʙɪʀᴀᴋɪʏᴏʀᴜᴍ ʙᴜɴᴜ ᴠᴇᴅᴀ sᴀʏ'
-
+'merdoobey i seviyor musunuz
+    
 )
     
 
@@ -409,7 +410,7 @@ async def stag(event):
     return await event.respond("• 𝖤𝗍𝗂𝗄𝖾𝗍 𝗂𝗌𝗅𝖾𝗆𝗂𝗇𝖾 𝖻𝖺𝗌𝗅𝖺𝗆𝖺𝗆 𝗂𝖼𝗂𝗇 𝖻𝗂𝗋 𝗌𝖾𝖻𝖾𝗉 𝗒𝖺𝗓𝗂𝗇 ! ")
     
   if mode == "text_on_cmd":
-    await client.send_message(event.chat_id, "• 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝗅𝖺𝖽𝗂 . . .",
+    await client.send_message(event.chat_id, "• merdobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝗅𝖺ttı . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -423,7 +424,7 @@ async def stag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(soz)}](tg://user?id={usr.id}) "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 . . .",
+        await event.respond("⛔ merdoobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽urdu . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -470,7 +471,7 @@ async def rtag(event):
     return await event.respond("**• Etiketleme için bir mesaj yazın !**")
     
   if mode == "text_on_cmd":
-    await client.send_message(event.chat_id, "✅ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝗅𝖺𝖽𝗂 . . .",
+    await client.send_message(event.chat_id, "✅ Merdobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖻𝖺𝗌𝗅𝖺ttı . . .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
@@ -484,7 +485,7 @@ async def rtag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(renk)}](tg://user?id={usr.id}) "
       if event.chat_id not in gece_tag:
-        await event.respond("⛔ 𝖴𝗒𝖾 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋𝖽𝗎𝗋𝗎𝗅𝖽𝗎 .",
+        await event.respond("⛔ Merdobey 𝖾𝗍𝗂𝗄𝖾𝗍𝗅𝖾𝗆𝖾 𝗂𝗌𝗅𝖾𝗆𝗂 𝖽𝗎𝗋durdu .",
                     buttons=(
                       [
                        Button.url('📝  𝖪𝖺𝗇𝖺𝗅  📝', f'https://t.me/ChatKaos')
